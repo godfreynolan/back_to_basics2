@@ -1,7 +1,9 @@
 import json
+from pathlib import Path
 
-input_json_file = "input_data.json"
-input_jsonl_file = "input_data.jsonl"
+BASE_DIR = Path(__file__).resolve().parent
+input_json_file = BASE_DIR / "input_data.json"
+input_jsonl_file = BASE_DIR / "input_data.jsonl"
 
 
 with open(input_json_file, 'r') as json_file:
